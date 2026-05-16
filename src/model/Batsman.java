@@ -2,24 +2,23 @@ package model;
 
 public class Batsman extends Player {
 
-    private String battingAverage;
-    private String strikeRate;
-    private int totalT20Runs;
+    // was String, now correctly double
+    private double battingAverage;
+    private double strikeRate;
+    private int    totalT20Runs;
     private String highestScore;
-    private int matchesPlayed;
-
+    private int    matchesPlayed;
 
     public Batsman(String fullName, String dateOfBirth, String nationality,
-                   String teamName, String battingAverage, String strikeRate,
+                   String teamName, double battingAverage, double strikeRate,
                    int totalT20Runs, String highestScore, int matchesPlayed) {
         super(fullName, dateOfBirth, nationality, "Batsman", teamName);
         this.battingAverage = battingAverage;
-        this.strikeRate = strikeRate;
-        this.totalT20Runs = totalT20Runs;
-        this.highestScore = highestScore;
-        this.matchesPlayed = matchesPlayed;
+        this.strikeRate     = strikeRate;
+        this.totalT20Runs   = totalT20Runs;
+        this.highestScore   = highestScore;
+        this.matchesPlayed  = matchesPlayed;
     }
-
 
     @Override
     public void displayInfo() {
@@ -31,12 +30,11 @@ public class Batsman extends Player {
         System.out.println("Matches      : " + matchesPlayed);
     }
 
+    public double getBattingAverage() { return battingAverage; }
+    public void setBattingAverage(double battingAverage) { this.battingAverage = battingAverage; }
 
-    public String getBattingAverage() { return battingAverage; }
-    public void setBattingAverage(String battingAverage) { this.battingAverage = battingAverage; }
-
-    public String getStrikeRate() { return strikeRate; }
-    public void setStrikeRate(String strikeRate) { this.strikeRate = strikeRate; }
+    public double getStrikeRate() { return strikeRate; }
+    public void setStrikeRate(double strikeRate) { this.strikeRate = strikeRate; }
 
     public int getTotalT20Runs() { return totalT20Runs; }
     public void setTotalT20Runs(int totalT20Runs) { this.totalT20Runs = totalT20Runs; }
@@ -49,7 +47,7 @@ public class Batsman extends Player {
 
     @Override
     public String toString() {
-        return String.format("%-25s | Batsman    | Avg: %-6s | SR: %-6s | Runs: %d",
+        return String.format("%-25s | Batsman    | Avg: %-6.2f | SR: %-6.2f | Runs: %d",
                 getFullName(), battingAverage, strikeRate, totalT20Runs);
     }
 }

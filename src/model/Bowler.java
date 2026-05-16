@@ -2,25 +2,23 @@ package model;
 
 public class Bowler extends Player {
 
-    // INTENTIONAL ISSUE: should be double, stored as String
-    private String bowlingAverage;
-    private String economyRate;
-    private int totalT20Wickets;
+    //  was String, now correctly double
+    private double bowlingAverage;
+    private double economyRate;
+    private int    totalT20Wickets;
     private String bestBowling;
-    private int matchesPlayed;
-
+    private int    matchesPlayed;
 
     public Bowler(String fullName, String dateOfBirth, String nationality,
-                  String teamName, String bowlingAverage, String economyRate,
+                  String teamName, double bowlingAverage, double economyRate,
                   int totalT20Wickets, String bestBowling, int matchesPlayed) {
         super(fullName, dateOfBirth, nationality, "Bowler", teamName);
-        this.bowlingAverage = bowlingAverage;
-        this.economyRate = economyRate;
+        this.bowlingAverage  = bowlingAverage;
+        this.economyRate     = economyRate;
         this.totalT20Wickets = totalT20Wickets;
-        this.bestBowling = bestBowling;
-        this.matchesPlayed = matchesPlayed;
+        this.bestBowling     = bestBowling;
+        this.matchesPlayed   = matchesPlayed;
     }
-
 
     @Override
     public void displayInfo() {
@@ -32,12 +30,11 @@ public class Bowler extends Player {
         System.out.println("Matches      : " + matchesPlayed);
     }
 
+    public double getBowlingAverage() { return bowlingAverage; }
+    public void setBowlingAverage(double bowlingAverage) { this.bowlingAverage = bowlingAverage; }
 
-    public String getBowlingAverage() { return bowlingAverage; }
-    public void setBowlingAverage(String bowlingAverage) { this.bowlingAverage = bowlingAverage; }
-
-    public String getEconomyRate() { return economyRate; }
-    public void setEconomyRate(String economyRate) { this.economyRate = economyRate; }
+    public double getEconomyRate() { return economyRate; }
+    public void setEconomyRate(double economyRate) { this.economyRate = economyRate; }
 
     public int getTotalT20Wickets() { return totalT20Wickets; }
     public void setTotalT20Wickets(int totalT20Wickets) { this.totalT20Wickets = totalT20Wickets; }
@@ -48,10 +45,9 @@ public class Bowler extends Player {
     public int getMatchesPlayed() { return matchesPlayed; }
     public void setMatchesPlayed(int matchesPlayed) { this.matchesPlayed = matchesPlayed; }
 
-
     @Override
     public String toString() {
-        return String.format("%-25s | Bowler     | Avg: %-6s | Eco: %-6s | Wickets: %d",
+        return String.format("%-25s | Bowler     | Avg: %-6.2f | Eco: %-6.2f | Wickets: %d",
                 getFullName(), bowlingAverage, economyRate, totalT20Wickets);
     }
 }

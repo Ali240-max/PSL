@@ -1,5 +1,4 @@
 package service;
-
 import com.google.gson.*;
 import model.*;
 import java.io.*;
@@ -50,6 +49,7 @@ public class DataLoader {
                 json.get("nrr").getAsDouble()
             );
 
+            // Load players into team
             JsonArray playersArray = json.getAsJsonArray("players");
             List<Player> players = loadPlayers(playersArray, team.getTeamName());
             for (Player p : players) {
@@ -82,8 +82,8 @@ public class DataLoader {
                             p.get("dateOfBirth").getAsString(),
                             p.get("nationality").getAsString(),
                             teamName,
-                            p.get("battingAverage").getAsString(),
-                            p.get("strikeRate").getAsString(),
+                            p.get("battingAverage").getAsDouble(),
+                            p.get("strikeRate").getAsDouble(),
                             p.get("totalT20Runs").getAsInt(),
                             p.get("highestScore").getAsString(),
                             p.get("matchesPlayed").getAsInt()
@@ -96,8 +96,8 @@ public class DataLoader {
                             p.get("dateOfBirth").getAsString(),
                             p.get("nationality").getAsString(),
                             teamName,
-                            p.get("bowlingAverage").getAsString(),
-                            p.get("economyRate").getAsString(),
+                            p.get("bowlingAverage").getAsDouble(),
+                            p.get("economyRate").getAsDouble(),
                             p.get("totalT20Wickets").getAsInt(),
                             p.get("bestBowling").getAsString(),
                             p.get("matchesPlayed").getAsInt()
@@ -110,10 +110,10 @@ public class DataLoader {
                             p.get("dateOfBirth").getAsString(),
                             p.get("nationality").getAsString(),
                             teamName,
-                            p.get("battingAverage").getAsString(),
-                            p.get("strikeRate").getAsString(),
-                            p.get("bowlingAverage").getAsString(),
-                            p.get("economyRate").getAsString(),
+                            p.get("battingAverage").getAsDouble(),
+                            p.get("strikeRate").getAsDouble(),
+                            p.get("bowlingAverage").getAsDouble(),
+                            p.get("economyRate").getAsDouble(),
                             p.get("totalT20Runs").getAsInt(),
                             p.get("totalT20Wickets").getAsInt(),
                             p.get("highestScore").getAsString(),
@@ -123,7 +123,6 @@ public class DataLoader {
                         break;
 
                     case "Coach":
-                       
                         break;
 
                     default:

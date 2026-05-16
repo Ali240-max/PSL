@@ -8,7 +8,6 @@ import java.util.*;
 
 public class AdminService {
 
-    // INTENTIONAL ISSUE: plain text password visible in code
     private static final String ADMIN_USERNAME = "admin";
     private static final String ADMIN_PASSWORD = "psl1234";
 
@@ -30,7 +29,6 @@ public class AdminService {
             System.out.print("Password: ");
             String password = scanner.nextLine().trim();
 
-            // INTENTIONAL ISSUE: plain text comparison
             if (username.equals(ADMIN_USERNAME) && password.equals(ADMIN_PASSWORD)) {
                 System.out.println("Login successful. Welcome, Admin!");
                 return true;
@@ -108,9 +106,9 @@ public class AdminService {
 
             if (typeChoice == 1) {
                 System.out.print("Batting Average : ");
-                String battingAvg = scanner.nextLine().trim();
+                double battingAvg = Double.parseDouble(scanner.nextLine().trim());
                 System.out.print("Strike Rate     : ");
-                String strikeRate = scanner.nextLine().trim();
+                double strikeRate = Double.parseDouble(scanner.nextLine().trim());
                 System.out.print("Total T20 Runs  : ");
                 int runs = Integer.parseInt(scanner.nextLine().trim());
                 System.out.print("Highest Score   : ");
@@ -131,9 +129,9 @@ public class AdminService {
 
             } else if (typeChoice == 2) {
                 System.out.print("Bowling Average : ");
-                String bowlingAvg = scanner.nextLine().trim();
+                double bowlingAvg = Double.parseDouble(scanner.nextLine().trim());
                 System.out.print("Economy Rate    : ");
-                String economyRate = scanner.nextLine().trim();
+                double economyRate = Double.parseDouble(scanner.nextLine().trim());
                 System.out.print("Total T20 Wickets: ");
                 int wickets = Integer.parseInt(scanner.nextLine().trim());
                 System.out.print("Best Bowling    : ");
@@ -154,13 +152,13 @@ public class AdminService {
 
             } else if (typeChoice == 3) {
                 System.out.print("Batting Average : ");
-                String battingAvg = scanner.nextLine().trim();
+                double battingAvg = Double.parseDouble(scanner.nextLine().trim());
                 System.out.print("Strike Rate     : ");
-                String strikeRate = scanner.nextLine().trim();
+                double strikeRate = Double.parseDouble(scanner.nextLine().trim());
                 System.out.print("Bowling Average : ");
-                String bowlingAvg = scanner.nextLine().trim();
+                double bowlingAvg = Double.parseDouble(scanner.nextLine().trim());
                 System.out.print("Economy Rate    : ");
-                String economyRate = scanner.nextLine().trim();
+                double economyRate = Double.parseDouble(scanner.nextLine().trim());
                 System.out.print("Total T20 Runs  : ");
                 int runs = Integer.parseInt(scanner.nextLine().trim());
                 System.out.print("Total T20 Wickets: ");
@@ -193,10 +191,8 @@ public class AdminService {
                 return;
             }
 
-            // Add to memory
             team.addPlayer(newPlayer);
 
-            // Save to JSON file
             savePlayerToJson(teamName, playerJson);
             System.out.println("Player '" + fullName + "' added to " + teamName + " successfully.");
 
@@ -227,10 +223,8 @@ public class AdminService {
             System.out.print("Enter player name to remove: ");
             String playerName = scanner.nextLine().trim();
 
-            // Remove from memory
             team.removePlayer(playerName);
 
-            // Remove from JSON file
             removePlayerFromJson(teamName, playerName);
 
         } catch (Exception e) {

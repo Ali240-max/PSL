@@ -1,32 +1,33 @@
 package model;
 
 public class AllRounder extends Player {
-    private String battingAverage;
-    private String strikeRate;
-    private String bowlingAverage;
-    private String economyRate;
-    private int totalT20Runs;
-    private int totalT20Wickets;
+
+    //  was String, now correctly double
+    private double battingAverage;
+    private double strikeRate;
+    private double bowlingAverage;
+    private double economyRate;
+    private int    totalT20Runs;
+    private int    totalT20Wickets;
     private String highestScore;
     private String bestBowling;
-    private int matchesPlayed;
-
+    private int    matchesPlayed;
 
     public AllRounder(String fullName, String dateOfBirth, String nationality,
-                      String teamName, String battingAverage, String strikeRate,
-                      String bowlingAverage, String economyRate, int totalT20Runs,
+                      String teamName, double battingAverage, double strikeRate,
+                      double bowlingAverage, double economyRate, int totalT20Runs,
                       int totalT20Wickets, String highestScore, String bestBowling,
                       int matchesPlayed) {
         super(fullName, dateOfBirth, nationality, "All-Rounder", teamName);
-        this.battingAverage = battingAverage;
-        this.strikeRate = strikeRate;
-        this.bowlingAverage = bowlingAverage;
-        this.economyRate = economyRate;
-        this.totalT20Runs = totalT20Runs;
+        this.battingAverage  = battingAverage;
+        this.strikeRate      = strikeRate;
+        this.bowlingAverage  = bowlingAverage;
+        this.economyRate     = economyRate;
+        this.totalT20Runs    = totalT20Runs;
         this.totalT20Wickets = totalT20Wickets;
-        this.highestScore = highestScore;
-        this.bestBowling = bestBowling;
-        this.matchesPlayed = matchesPlayed;
+        this.highestScore    = highestScore;
+        this.bestBowling     = bestBowling;
+        this.matchesPlayed   = matchesPlayed;
     }
 
     @Override
@@ -45,18 +46,17 @@ public class AllRounder extends Player {
         System.out.println("Matches      : " + matchesPlayed);
     }
 
+    public double getBattingAverage() { return battingAverage; }
+    public void setBattingAverage(double battingAverage) { this.battingAverage = battingAverage; }
 
-    public String getBattingAverage() { return battingAverage; }
-    public void setBattingAverage(String battingAverage) { this.battingAverage = battingAverage; }
+    public double getStrikeRate() { return strikeRate; }
+    public void setStrikeRate(double strikeRate) { this.strikeRate = strikeRate; }
 
-    public String getStrikeRate() { return strikeRate; }
-    public void setStrikeRate(String strikeRate) { this.strikeRate = strikeRate; }
+    public double getBowlingAverage() { return bowlingAverage; }
+    public void setBowlingAverage(double bowlingAverage) { this.bowlingAverage = bowlingAverage; }
 
-    public String getBowlingAverage() { return bowlingAverage; }
-    public void setBowlingAverage(String bowlingAverage) { this.bowlingAverage = bowlingAverage; }
-
-    public String getEconomyRate() { return economyRate; }
-    public void setEconomyRate(String economyRate) { this.economyRate = economyRate; }
+    public double getEconomyRate() { return economyRate; }
+    public void setEconomyRate(double economyRate) { this.economyRate = economyRate; }
 
     public int getTotalT20Runs() { return totalT20Runs; }
     public void setTotalT20Runs(int totalT20Runs) { this.totalT20Runs = totalT20Runs; }
