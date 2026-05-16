@@ -1,15 +1,35 @@
+// {
+//   "version": "0.2.0",
+//   "configurations": [
+//     {
+//       "type": "java",
+//       "name": "PSL System",
+//       "request": "launch",
+//       "mainClass": "ui.MainMenu",
+//       "classPaths": [
+//         "${workspaceFolder}/src/lib/gson.jar",
+//         "${workspaceFolder}/bin"
+//       ]
+//     }
+//   ]
+// }
+
 {
   "version": "0.2.0",
   "configurations": [
     {
       "type": "java",
+      "name": "MainMenu",
+      "request": "launch",
+      "mainClass": "ui.MainMenu",
+      "projectName": "PSL-Management_bd85e2c7"
+    },
+    {
+      "type": "java",
       "name": "PSL System",
       "request": "launch",
       "mainClass": "ui.MainMenu",
-      "classPaths": [
-        "${workspaceFolder}/src/lib/gson.jar",
-        "${workspaceFolder}/bin"
-      ]
+      "projectName": "PSL-Management"
     }
   ]
 }

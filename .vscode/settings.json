@@ -1,3 +1,9 @@
+// {
+//   "java.project.referencedLibraries": ["src/lib/**/*.jar"]
+// }
+
 {
-  "java.project.referencedLibraries": ["src/lib/**/*.jar"]
+  "java.project.referencedLibraries": ["src/lib/**/*.jar"],
+  "java.project.sourcePaths": ["src"],
+  "java.debug.settings.onBuildFailureProceed": true
 }
