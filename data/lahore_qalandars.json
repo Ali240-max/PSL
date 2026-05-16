@@ -1,0 +1,96 @@
+{
+    "teamName": "Lahore Qalandars",
+    "homeGround": "Gaddafi Stadium",
+    "captain": "Shaheen Afridi",
+    "coach": "Aaqib Javed",
+    "foundedYear": 2015,
+    "titlesWon": 1,
+    "matchesPlayed": 10,
+    "wins": 6,
+    "losses": 4,
+    "nrr": 0.287,
+    "players": [
+        {
+            "type": "Batsman",
+            "fullName": "Fakhar Zaman",
+            "dateOfBirth": "1990-04-10",
+            "nationality": "Pakistani",
+            "battingAverage": "38.50",
+            "strikeRate": "142.6",
+            "totalT20Runs": 3200,
+            "highestScore": "138*",
+            "matchesPlayed": 130
+        },
+        {
+            "type": "Batsman",
+            "fullName": "Abdullah Shafique",
+            "dateOfBirth": "1999-10-29",
+            "nationality": "Pakistani",
+            "battingAverage": "34.20",
+            "strikeRate": "128.4",
+            "totalT20Runs": 1800,
+            "highestScore": "112",
+            "matchesPlayed": 88
+        },
+        {
+            "type": "Bowler",
+            "fullName": "Shaheen Afridi",
+            "dateOfBirth": "1999-04-06",
+            "nationality": "Pakistani",
+            "bowlingAverage": "18.40",
+            "economyRate": "7.10",
+            "totalT20Wickets": 145,
+            "bestBowling": "5/10",
+            "matchesPlayed": 105
+        },
+        {
+            "type": "Bowler",
+            "fullName": "Haris Rauf",
+            "dateOfBirth": "1993-10-07",
+            "nationality": "Pakistani",
+            "bowlingAverage": "21.30",
+            "economyRate": "7.65",
+            "totalT20Wickets": 118,
+            "bestBowling": "4/21",
+            "matchesPlayed": 98
+        },
+        {
+            "type": "AllRounder",
+            "fullName": "David Wiese",
+            "dateOfBirth": "1985-05-18",
+            "nationality": "South African",
+            "battingAverage": "29.00",
+            "strikeRate": "135.0",
+            "bowlingAverage": "23.50",
+            "economyRate": "8.10",
+            "totalT20Runs": 1100,
+            "totalT20Wickets": 62,
+            "highestScore": "88",
+            "bestBowling": "3/18",
+            "matchesPlayed": 115
+        },
+        {
+            "type": "AllRounder",
+            "fullName": "Rashid Khan",
+            "dateOfBirth": "1998-09-20",
+            "nationality": "Afghan",
+            "battingAverage": "18.00",
+            "strikeRate": "140.0",
+            "bowlingAverage": "17.20",
+            "economyRate": "6.80",
+            "totalT20Runs": 620,
+            "totalT20Wickets": 180,
+            "highestScore": "56",
+            "bestBowling": "5/3",
+            "matchesPlayed": 148
+        },
+        {
+            "type": "Coach",
+            "fullName": "Aaqib Javed",
+            "dateOfBirth": "1972-08-05",
+            "nationality": "Pakistani",
+            "specialization": "Bowling",
+            "yearsOfExperience": 22
+        }
+    ]
+}

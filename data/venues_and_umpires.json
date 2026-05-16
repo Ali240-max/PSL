@@ -1,0 +1,17 @@
+{
+    "stadiums": [
+        { "stadiumName": "Gaddafi Stadium",            "city": "Lahore",      "capacity": 27000 },
+        { "stadiumName": "National Bank Stadium",      "city": "Karachi",     "capacity": 34228 },
+        { "stadiumName": "Rawalpindi Cricket Stadium", "city": "Rawalpindi",  "capacity": 15000 },
+        { "stadiumName": "Arbab Niaz Stadium",         "city": "Peshawar",    "capacity": 15000 },
+        { "stadiumName": "Multan Cricket Stadium",     "city": "Multan",      "capacity": 35000 },
+        { "stadiumName": "Bugti Stadium",              "city": "Quetta",      "capacity": 10000 }
+    ],
+    "umpires": [
+        { "fullName": "Aleem Dar",     "dateOfBirth": "1968-06-06", "nationality": "Pakistani",  "matchesOfficiated": 435 },
+        { "fullName": "Ahsan Raza",    "dateOfBirth": "1969-09-20", "nationality": "Pakistani",  "matchesOfficiated": 120 },
+        { "fullName": "Rashid Riaz",   "dateOfBirth": "1970-01-15", "nationality": "Pakistani",  "matchesOfficiated":  98 },
+        { "fullName": "Michael Gough", "dateOfBirth": "1979-12-18", "nationality": "English",    "matchesOfficiated": 210 },
+        { "fullName": "Rod Tucker",    "dateOfBirth": "1964-08-28", "nationality": "Australian", "matchesOfficiated": 185 }
+    ]
+}

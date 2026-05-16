@@ -1,0 +1,96 @@
+{
+    "teamName": "Karachi Kings",
+    "homeGround": "National Bank Stadium",
+    "captain": "Imad Wasim",
+    "coach": "Dean Jones",
+    "foundedYear": 2015,
+    "titlesWon": 1,
+    "matchesPlayed": 10,
+    "wins": 3,
+    "losses": 7,
+    "nrr": -0.388,
+    "players": [
+        {
+            "type": "Batsman",
+            "fullName": "Imad Wasim",
+            "dateOfBirth": "1988-12-18",
+            "nationality": "Pakistani",
+            "battingAverage": "24.60",
+            "strikeRate": "126.5",
+            "totalT20Runs": 1800,
+            "highestScore": "73",
+            "matchesPlayed": 138
+        },
+        {
+            "type": "Batsman",
+            "fullName": "Martin Guptill",
+            "dateOfBirth": "1986-09-30",
+            "nationality": "New Zealander",
+            "battingAverage": "33.80",
+            "strikeRate": "142.0",
+            "totalT20Runs": 3100,
+            "highestScore": "119*",
+            "matchesPlayed": 125
+        },
+        {
+            "type": "Bowler",
+            "fullName": "Mohammad Amir",
+            "dateOfBirth": "1992-04-13",
+            "nationality": "Pakistani",
+            "bowlingAverage": "22.80",
+            "economyRate": "7.30",
+            "totalT20Wickets": 118,
+            "bestBowling": "5/14",
+            "matchesPlayed": 108
+        },
+        {
+            "type": "Bowler",
+            "fullName": "Waqas Maqsood",
+            "dateOfBirth": "1993-07-04",
+            "nationality": "Pakistani",
+            "bowlingAverage": "29.50",
+            "economyRate": "8.40",
+            "totalT20Wickets": 58,
+            "bestBowling": "3/20",
+            "matchesPlayed": 52
+        },
+        {
+            "type": "AllRounder",
+            "fullName": "Joe Clarke",
+            "dateOfBirth": "1996-05-26",
+            "nationality": "English",
+            "battingAverage": "28.50",
+            "strikeRate": "136.0",
+            "bowlingAverage": "0.00",
+            "economyRate": "8.80",
+            "totalT20Runs": 980,
+            "totalT20Wickets": 0,
+            "highestScore": "82",
+            "bestBowling": "N/A",
+            "matchesPlayed": 88
+        },
+        {
+            "type": "AllRounder",
+            "fullName": "Aamer Yamin",
+            "dateOfBirth": "1988-11-02",
+            "nationality": "Pakistani",
+            "battingAverage": "19.00",
+            "strikeRate": "122.0",
+            "bowlingAverage": "28.40",
+            "economyRate": "8.60",
+            "totalT20Runs": 580,
+            "totalT20Wickets": 65,
+            "highestScore": "58",
+            "bestBowling": "3/22",
+            "matchesPlayed": 95
+        },
+        {
+            "type": "Coach",
+            "fullName": "Dean Jones",
+            "dateOfBirth": "1961-03-24",
+            "nationality": "Australian",
+            "specialization": "Batting",
+            "yearsOfExperience": 20
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "PSL System",
+      "request": "launch",
+      "mainClass": "ui.MainMenu",
+      "classPaths": [
+        "${workspaceFolder}/src/lib/gson.jar",
+        "${workspaceFolder}/bin"
+      ]
+    }
+  ]
+}

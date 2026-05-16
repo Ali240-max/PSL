@@ -1,0 +1,92 @@
+{
+    "teamName": "Islamabad United",
+    "homeGround": "Rawalpindi Cricket Stadium",
+    "captain": "Shadab Khan",
+    "coach": "Mike Hesson",
+    "foundedYear": 2015,
+    "titlesWon": 3,
+    "matchesPlayed": 10,
+    "wins": 7,
+    "losses": 3,
+    "nrr": 0.435,
+    "players": [
+        {
+            "type": "Batsman",
+            "fullName": "Shadab Khan",
+            "dateOfBirth": "1998-10-04",
+            "nationality": "Pakistani",
+            "battingAverage": "28.50",
+            "strikeRate": "138.2",
+            "totalT20Runs": 1250,
+            "highestScore": "86",
+            "matchesPlayed": 95
+        },
+        {
+            "type": "Batsman",
+            "fullName": "Colin Munro",
+            "dateOfBirth": "1987-03-11",
+            "nationality": "New Zealander",
+            "battingAverage": "32.40",
+            "strikeRate": "151.3",
+            "totalT20Runs": 2100,
+            "highestScore": "109*",
+            "matchesPlayed": 110
+        },
+        {
+            "type": "Batsman",
+            "fullName": "Alex Hales",
+            "dateOfBirth": "1989-01-03",
+            "nationality": "English",
+            "battingAverage": "36.80",
+            "strikeRate": "148.5",
+            "totalT20Runs": 2450,
+            "highestScore": "147",
+            "matchesPlayed": 105
+        },
+        {
+            "type": "Bowler",
+            "fullName": "Faheem Ashraf",
+            "dateOfBirth": "1994-01-16",
+            "nationality": "Pakistani",
+            "bowlingAverage": "24.30",
+            "economyRate": "7.85",
+            "totalT20Wickets": 85,
+            "bestBowling": "4/22",
+            "matchesPlayed": 90
+        },
+        {
+            "type": "Bowler",
+            "fullName": "Mohammad Wasim",
+            "dateOfBirth": "2000-08-25",
+            "nationality": "Pakistani",
+            "bowlingAverage": "22.10",
+            "economyRate": "7.40",
+            "totalT20Wickets": 72,
+            "bestBowling": "4/15",
+            "matchesPlayed": 65
+        },
+        {
+            "type": "AllRounder",
+            "fullName": "Asif Ali",
+            "dateOfBirth": "1991-10-01",
+            "nationality": "Pakistani",
+            "battingAverage": "26.00",
+            "strikeRate": "142.0",
+            "bowlingAverage": "0.00",
+            "economyRate": "7.50",
+            "totalT20Runs": 980,
+            "totalT20Wickets": 0,
+            "highestScore": "76",
+            "bestBowling": "N/A",
+            "matchesPlayed": 88
+        },
+        {
+            "type": "Coach",
+            "fullName": "Mike Hesson",
+            "dateOfBirth": "1974-03-02",
+            "nationality": "New Zealander",
+            "specialization": "Batting",
+            "yearsOfExperience": 18
+        }
+    ]
+}

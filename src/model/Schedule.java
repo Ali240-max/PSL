@@ -6,7 +6,6 @@ public class Schedule {
 
     private List<Match> matches;
 
-
     public Schedule() {
         this.matches = new ArrayList<>();
     }

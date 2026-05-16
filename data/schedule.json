@@ -1,0 +1,104 @@
+{
+    "matches": [
+        {
+            "matchNumber": "1",
+            "team1": "Lahore Qalandars",
+            "team2": "Islamabad United",
+            "stadiumName": "Gaddafi Stadium",
+            "umpireName": "Aleem Dar",
+            "matchDate": "2025-04-10",
+            "matchTime": "7:00 PM",
+            "result": "Lahore Qalandars won by 6 wickets"
+        },
+        {
+            "matchNumber": "2",
+            "team1": "Multan Sultans",
+            "team2": "Quetta Gladiators",
+            "stadiumName": "Multan Cricket Stadium",
+            "umpireName": "Ahsan Raza",
+            "matchDate": "2025-04-11",
+            "matchTime": "7:00 PM",
+            "result": "Multan Sultans won by 45 runs"
+        },
+        {
+            "matchNumber": "3",
+            "team1": "Peshawar Zalmi",
+            "team2": "Karachi Kings",
+            "stadiumName": "Arbab Niaz Stadium",
+            "umpireName": "Rashid Riaz",
+            "matchDate": "2025-04-12",
+            "matchTime": "3:00 PM",
+            "result": "Peshawar Zalmi won by 3 wickets"
+        },
+        {
+            "matchNumber": "4",
+            "team1": "Islamabad United",
+            "team2": "Multan Sultans",
+            "stadiumName": "Rawalpindi Cricket Stadium",
+            "umpireName": "Michael Gough",
+            "matchDate": "2025-04-13",
+            "matchTime": "7:00 PM",
+            "result": "Multan Sultans won by 8 runs"
+        },
+        {
+            "matchNumber": "5",
+            "team1": "Lahore Qalandars",
+            "team2": "Peshawar Zalmi",
+            "stadiumName": "Gaddafi Stadium",
+            "umpireName": "Rod Tucker",
+            "matchDate": "2025-04-14",
+            "matchTime": "7:00 PM",
+            "result": "Lahore Qalandars won by 22 runs"
+        },
+        {
+            "matchNumber": "6",
+            "team1": "Karachi Kings",
+            "team2": "Quetta Gladiators",
+            "stadiumName": "National Bank Stadium",
+            "umpireName": "Aleem Dar",
+            "matchDate": "2025-04-15",
+            "matchTime": "7:00 PM",
+            "result": "Quetta Gladiators won by 4 wickets"
+        },
+        {
+            "matchNumber": "7",
+            "team1": "Multan Sultans",
+            "team2": "Lahore Qalandars",
+            "stadiumName": "Multan Cricket Stadium",
+            "umpireName": "Ahsan Raza",
+            "matchDate": "2025-04-17",
+            "matchTime": "7:00 PM",
+            "result": "Multan Sultans won by 57 runs"
+        },
+        {
+            "matchNumber": "8",
+            "team1": "Islamabad United",
+            "team2": "Peshawar Zalmi",
+            "stadiumName": "Rawalpindi Cricket Stadium",
+            "umpireName": "Rashid Riaz",
+            "matchDate": "2025-04-18",
+            "matchTime": "3:00 PM",
+            "result": "Islamabad United won by 5 wickets"
+        },
+        {
+            "matchNumber": "9",
+            "team1": "Karachi Kings",
+            "team2": "Lahore Qalandars",
+            "stadiumName": "National Bank Stadium",
+            "umpireName": "Michael Gough",
+            "matchDate": "2025-04-19",
+            "matchTime": "7:00 PM",
+            "result": "Lahore Qalandars won by 9 runs"
+        },
+        {
+            "matchNumber": "10",
+            "team1": "Quetta Gladiators",
+            "team2": "Multan Sultans",
+            "stadiumName": "Bugti Stadium",
+            "umpireName": "Rod Tucker",
+            "matchDate": "2025-04-20",
+            "matchTime": "7:00 PM",
+            "result": "Multan Sultans won by 31 runs"
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "teamName": "Quetta Gladiators",
+    "homeGround": "Bugti Stadium",
+    "captain": "Sarfaraz Ahmed",
+    "coach": "Moin Khan",
+    "foundedYear": 2015,
+    "titlesWon": 2,
+    "matchesPlayed": 10,
+    "wins": 4,
+    "losses": 6,
+    "nrr": -0.215,
+    "players": [
+        {
+            "type": "Batsman",
+            "fullName": "Sarfaraz Ahmed",
+            "dateOfBirth": "1987-05-22",
+            "nationality": "Pakistani",
+            "battingAverage": "29.80",
+            "strikeRate": "118.4",
+            "totalT20Runs": 2100,
+            "highestScore": "97",
+            "matchesPlayed": 145
+        },
+        {
+            "type": "Batsman",
+            "fullName": "Jason Roy",
+            "dateOfBirth": "1990-07-21",
+            "nationality": "English",
+            "battingAverage": "35.60",
+            "strikeRate": "148.9",
+            "totalT20Runs": 2800,
+            "highestScore": "115",
+            "matchesPlayed": 118
+        },
+        {
+            "type": "Bowler",
+            "fullName": "Naseem Shah",
+            "dateOfBirth": "2003-02-15",
+            "nationality": "Pakistani",
+            "bowlingAverage": "20.10",
+            "economyRate": "7.55",
+            "totalT20Wickets": 82,
+            "bestBowling": "4/12",
+            "matchesPlayed": 62
+        },
+        {
+            "type": "Bowler",
+            "fullName": "Mohammad Hasnain",
+            "dateOfBirth": "1999-04-05",
+            "nationality": "Pakistani",
+            "bowlingAverage": "24.20",
+            "economyRate": "8.10",
+            "totalT20Wickets": 74,
+            "bestBowling": "3/14",
+            "matchesPlayed": 68
+        },
+        {
+            "type": "AllRounder",
+            "fullName": "James Vince",
+            "dateOfBirth": "1991-03-14",
+            "nationality": "English",
+            "battingAverage": "33.00",
+            "strikeRate": "138.0",
+            "bowlingAverage": "0.00",
+            "economyRate": "9.00",
+            "totalT20Runs": 2200,
+            "totalT20Wickets": 0,
+            "highestScore": "119",
+            "bestBowling": "N/A",
+            "matchesPlayed": 148
+        },
+        {
+            "type": "AllRounder",
+            "fullName": "Odean Smith",
+            "dateOfBirth": "1999-03-08",
+            "nationality": "Jamaican",
+            "battingAverage": "18.00",
+            "strikeRate": "152.0",
+            "bowlingAverage": "26.50",
+            "economyRate": "9.20",
+            "totalT20Runs": 420,
+            "totalT20Wickets": 48,
+            "highestScore": "64",
+            "bestBowling": "4/30",
+            "matchesPlayed": 72
+        },
+        {
+            "type": "Coach",
+            "fullName": "Moin Khan",
+            "dateOfBirth": "1971-09-23",
+            "nationality": "Pakistani",
+            "specialization": "Wicket-keeping",
+            "yearsOfExperience": 15
+        }
+    ]
+}

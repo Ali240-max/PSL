@@ -1,0 +1,96 @@
+{
+    "teamName": "Multan Sultans",
+    "homeGround": "Multan Cricket Stadium",
+    "captain": "Mohammad Rizwan",
+    "coach": "Andy Flower",
+    "foundedYear": 2018,
+    "titlesWon": 2,
+    "matchesPlayed": 10,
+    "wins": 8,
+    "losses": 2,
+    "nrr": 0.652,
+    "players": [
+        {
+            "type": "Batsman",
+            "fullName": "Mohammad Rizwan",
+            "dateOfBirth": "1992-06-01",
+            "nationality": "Pakistani",
+            "battingAverage": "46.80",
+            "strikeRate": "134.5",
+            "totalT20Runs": 3800,
+            "highestScore": "104*",
+            "matchesPlayed": 145
+        },
+        {
+            "type": "Batsman",
+            "fullName": "Rilee Rossouw",
+            "dateOfBirth": "1989-10-09",
+            "nationality": "South African",
+            "battingAverage": "41.20",
+            "strikeRate": "162.3",
+            "totalT20Runs": 2600,
+            "highestScore": "130",
+            "matchesPlayed": 120
+        },
+        {
+            "type": "Bowler",
+            "fullName": "Ihsanullah",
+            "dateOfBirth": "2000-01-25",
+            "nationality": "Pakistani",
+            "bowlingAverage": "19.80",
+            "economyRate": "7.20",
+            "totalT20Wickets": 98,
+            "bestBowling": "4/17",
+            "matchesPlayed": 75
+        },
+        {
+            "type": "Bowler",
+            "fullName": "Usama Mir",
+            "dateOfBirth": "1996-10-16",
+            "nationality": "Pakistani",
+            "bowlingAverage": "23.40",
+            "economyRate": "7.55",
+            "totalT20Wickets": 88,
+            "bestBowling": "4/26",
+            "matchesPlayed": 70
+        },
+        {
+            "type": "AllRounder",
+            "fullName": "Tim David",
+            "dateOfBirth": "1995-03-16",
+            "nationality": "Singaporean",
+            "battingAverage": "38.00",
+            "strikeRate": "172.5",
+            "bowlingAverage": "31.00",
+            "economyRate": "8.40",
+            "totalT20Runs": 1400,
+            "totalT20Wickets": 42,
+            "highestScore": "94",
+            "bestBowling": "3/22",
+            "matchesPlayed": 108
+        },
+        {
+            "type": "AllRounder",
+            "fullName": "Khushdil Shah",
+            "dateOfBirth": "1994-11-10",
+            "nationality": "Pakistani",
+            "battingAverage": "27.50",
+            "strikeRate": "145.0",
+            "bowlingAverage": "26.80",
+            "economyRate": "8.20",
+            "totalT20Runs": 980,
+            "totalT20Wickets": 55,
+            "highestScore": "82",
+            "bestBowling": "3/15",
+            "matchesPlayed": 115
+        },
+        {
+            "type": "Coach",
+            "fullName": "Andy Flower",
+            "dateOfBirth": "1968-04-28",
+            "nationality": "Zimbabwean",
+            "specialization": "Batting",
+            "yearsOfExperience": 25
+        }
+    ]
+}
