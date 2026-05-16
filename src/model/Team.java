@@ -17,28 +17,27 @@ public class Team {
     private int losses;
     private double nrr;
 
-    private int points;
     private List<Player> players;
-
 
     public Team(String teamName, String homeGround, String captain, String coach,
                 int foundedYear, int titlesWon, int matchesPlayed, int wins,
                 int losses, double nrr) {
-        this.teamName = teamName;
-        this.homeGround = homeGround;
-        this.captain = captain;
-        this.coach = coach;
-        this.foundedYear = foundedYear;
-        this.titlesWon = titlesWon;
+        this.teamName      = teamName;
+        this.homeGround    = homeGround;
+        this.captain       = captain;
+        this.coach         = coach;
+        this.foundedYear   = foundedYear;
+        this.titlesWon     = titlesWon;
         this.matchesPlayed = matchesPlayed;
-        this.wins = wins;
-        this.losses = losses;
-        this.nrr = nrr;
-        this.points = wins * 2;
-
-        this.players = new ArrayList<>();
+        this.wins          = wins;
+        this.losses        = losses;
+        this.nrr           = nrr;
+        this.players       = new ArrayList<>();
     }
 
+    public int calculatePoints() {
+        return wins * 2;
+    }
 
     public void addPlayer(Player player) {
         if (player == null) {
@@ -47,7 +46,6 @@ public class Team {
         }
         players.add(player);
     }
-
 
     public void removePlayer(String fullName) {
         boolean removed = players.removeIf(p ->
@@ -58,7 +56,6 @@ public class Team {
             System.out.println("Player '" + fullName + "' removed from " + teamName + ".");
         }
     }
-
 
     public List<Player> getPlayers() {
         return new ArrayList<>(players);
@@ -80,7 +77,7 @@ public class Team {
         System.out.println("Matches      : " + matchesPlayed);
         System.out.println("Wins         : " + wins);
         System.out.println("Losses       : " + losses);
-        System.out.println("Points       : " + (wins * 2));
+        System.out.println("Points       : " + calculatePoints());
         System.out.println("NRR          : " + nrr);
         System.out.println("--------------------------------------------");
         System.out.println("Squad (" + getSquadSize() + " players):");
@@ -95,11 +92,9 @@ public class Team {
     }
 
     public void displayPointsTableRow() {
-        // INTENTIONAL ISSUE: points calculated inline as wins * 2 again
         System.out.printf("%-25s | MP: %2d | W: %2d | L: %2d | Pts: %2d | NRR: %+.3f%n",
-                teamName, matchesPlayed, wins, losses, wins * 2, nrr);
+                teamName, matchesPlayed, wins, losses, calculatePoints(), nrr);
     }
-
 
     public String getTeamName() { return teamName; }
     public void setTeamName(String teamName) { this.teamName = teamName; }
@@ -125,7 +120,6 @@ public class Team {
     public int getWins() { return wins; }
     public void setWins(int wins) {
         this.wins = wins;
-        this.points = wins * 2;
     }
 
     public int getLosses() { return losses; }
@@ -134,10 +128,11 @@ public class Team {
     public double getNrr() { return nrr; }
     public void setNrr(double nrr) { this.nrr = nrr; }
 
-    public int getPoints() { return points; }
+    // calculatePoints() instead of storing stale inline value
+    public int getPoints() { return calculatePoints(); }
 
     @Override
     public String toString() {
-        return teamName + " | Points: " + points + " | NRR: " + nrr;
+        return teamName + " | Points: " + calculatePoints() + " | NRR: " + nrr; 
     }
 }

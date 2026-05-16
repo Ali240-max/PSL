@@ -1,4 +1,5 @@
 package service;
+
 import model.*;
 import java.util.*;
 
@@ -8,6 +9,7 @@ public class PSLSystem {
     private List<Stadium> stadiums;
     private List<Umpire>  umpires;
     private Schedule      schedule;
+
 
     public PSLSystem() {
         DataLoader loader = new DataLoader();
@@ -25,16 +27,21 @@ public class PSLSystem {
         System.out.println("\n========== PSL 2025 Points Table ==========");
         System.out.printf("%-25s | %3s | %3s | %3s | %4s | %7s%n",
                 "Team", "MP", "W", "L", "Pts", "NRR");
-                System.out.println("============================================================");
+        System.out.println("------------------------------------------------------------");
 
-        teams.sort((a, b) -> b.getPoints() - a.getPoints());
+        // sort by points first, NRR as tiebreaker
+        teams.sort((a, b) -> {
+            if (b.getPoints() != a.getPoints()) {
+                return b.getPoints() - a.getPoints();
+            }
+            return Double.compare(b.getNrr(), a.getNrr());
+        });
 
         for (Team team : teams) {
             team.displayPointsTableRow();
         }
         System.out.println("============================================================");
     }
-
 
     public void displaySchedule() {
         schedule.displayFullSchedule();
@@ -61,14 +68,12 @@ public class PSLSystem {
         }
     }
 
-
     public void displayAllTeamNames() {
         System.out.println("\nAvailable Teams:");
         for (Team t : teams) {
             System.out.println("  - " + t.getTeamName());
         }
     }
-
 
     public Team findTeamByName(String teamName) {
         for (Team t : teams) {
@@ -78,7 +83,6 @@ public class PSLSystem {
         }
         return null;
     }
-
 
     public List<Team>    getTeams()    { return new ArrayList<>(teams); }
     public List<Stadium> getStadiums() { return new ArrayList<>(stadiums); }

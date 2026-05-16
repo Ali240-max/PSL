@@ -8,8 +8,8 @@ import java.util.*;
 
 public class AdminService {
 
-    private static final String ADMIN_USERNAME = "admin";
-    private static final String ADMIN_PASSWORD = "psl1234";
+    private static final String ADMIN_USERNAME    = "admin";
+    private static final int    ADMIN_PASS_HASH   = "psl1234".hashCode();
 
     private PSLSystem pslSystem;
     private Scanner   scanner;
@@ -29,7 +29,7 @@ public class AdminService {
             System.out.print("Password: ");
             String password = scanner.nextLine().trim();
 
-            if (username.equals(ADMIN_USERNAME) && password.equals(ADMIN_PASSWORD)) {
+            if (username.equals(ADMIN_USERNAME) && password.hashCode() == ADMIN_PASS_HASH) {
                 System.out.println("Login successful. Welcome, Admin!");
                 return true;
             } else {
@@ -41,6 +41,7 @@ public class AdminService {
             return false;
         }
     }
+
 
     public void showAdminMenu() {
         boolean running = true;
@@ -203,6 +204,7 @@ public class AdminService {
         }
     }
 
+
     private void removePlayer() {
         try {
             pslSystem.displayAllTeamNames();
@@ -291,6 +293,7 @@ public class AdminService {
             System.out.println("Error adding stadium: " + e.getMessage());
         }
     }
+
 
     private void savePlayerToJson(String teamName, JsonObject playerJson) {
         try {
